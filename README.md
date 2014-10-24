@@ -22,19 +22,24 @@ In terms of the input, it is the following:
 2. The information wrt the the massive database.
 3. Some instruction as to how this layer should find the object. 
 
-If it's an upload directly from the DRE-UI, then it would not need this phase. 
 
+** Sifting Layer
 
+Inputs:
+1. Source that we want to find that are similar to ones in the database
+2. Configuration file that specifies the sifting process. Must be configurable?
 
-
-
-
-
-input layer -> 
+Outputs:
+Return a JSON objects that are candicates matches.
 
 ** Computation layer
 
+Inputs:
 
-** Blocking layer
+1. DRE information source object
+2. Configuration file that specifies:
 
-** 
+**. The default text comparison algorithm that specifies computation for a field.
+**. 
+
+
