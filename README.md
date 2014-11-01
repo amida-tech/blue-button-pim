@@ -23,7 +23,9 @@ In terms of the input, it is the following:
 3. Some instruction as to how this layer should find the object. 
 
 
-** Sifting Layer
+** Filter Layer **
+
+Finds a smaller collection of data from the database that we can run our computation algorithms with. 
 
 Inputs:
 1. Source that we want to find that are similar to ones in the database
@@ -32,14 +34,29 @@ Inputs:
 Outputs:
 Return a JSON objects that are candicates matches.
 
-** Computation layer
+Files:
+
+filter.js -  
+
+** Computation layer **
+
 
 Inputs:
 
 1. DRE information source object
 2. Configuration file that specifies:
+2.1: The default text comparison algorithm that specifies computation for a field.
 
-**. The default text comparison algorithm that specifies computation for a field.
-**. 
+deterministic and probablistic models
 
+**Pre-processing functions 
+2.2: Some functions that must be run to define the environment for computation. For example, if there is a collection of n objects that you need to compare with, and there are some functions that require some kind of pre-processing that needs to be done before a metric for a field is decided,
+then these functions would be run.
+
+** Each metric calculation 
+2.2.a: Any subsequent functions that rely on pre-processed data entries would use these values
+
+Files:
+
+compute.js 
 

@@ -1,7 +1,19 @@
 {
     "name":"blue-button-pim",
+    "version": "0.0.0",
+    "directories": {
+        "doc": "doc",
+        "lib": "lib"
+    },
 
-    
+    "author": "Dmitry Kachaev <dmitry@amida-tech.om>",
+    "contributors":{
+        
+
+
+
+    }
+
 
 
 
