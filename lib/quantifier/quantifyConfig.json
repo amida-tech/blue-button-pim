@@ -1,0 +1,12 @@
+[
+    {
+        "section":"demographics",
+        "key":"name",
+        "algo":"simpleName"
+    },
+    {
+        "section":"demographics",
+        "key":"dob",
+        "algo":"simpleDate"
+    }
+]
