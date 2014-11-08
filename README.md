@@ -60,3 +60,7 @@ Files:
 
 compute.js 
 
+** Decision Layer **
+
+This layer gets fed in all the data and numerics for each field/metric, and ultimately decides whether or not matched entries will be accepted.
+
