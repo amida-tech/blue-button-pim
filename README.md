@@ -38,6 +38,14 @@ Files:
 
 filter.js -  
 
+
+
+standardization procedures:
+
+Social security:
+
+All social security will be in the format:
+xxx-xx-xxxx
 ** Computation layer **
 
 
