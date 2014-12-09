@@ -1,0 +1,52 @@
+{
+  "name": "blue-button-pim",
+  "version": "0.0.5",
+  "description": "Patient Identification and Matching",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amida-tech/blue-button-pim"
+  },
+  "keywords": [
+    "pim",
+    "identity",
+    "matching",
+    "blue button",
+    "json",
+    "node",
+    "javascript"
+  ],
+  "author": "Dmitry Kachaev <dmitry.kachaev@gmail.com> (http://github.com/kachok)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/amida-tech/blue-button-pim/issues"
+  },
+  "homepage": "https://github.com/amida-tech/blue-button-pim",
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "browserify": "*",
+    "assert": "1.1.x",
+    "chai": "1.8.x",
+    "chai-datetime": "1.1.x",
+    "coveralls": "~2.10.0",
+    "execSync": "^1.0.1-pre",
+    "grunt-contrib-jshint": "0.8.x",
+    "grunt-contrib-watch": "0.6.x",
+    "grunt-coveralls": "*",
+    "grunt-istanbul-coverage": "*",
+    "grunt-jsbeautifier": "^0.2.7",
+    "grunt-mocha-test": "0.8.x",
+    "mocha": "1.17.x",
+    "mocha-lcov-reporter": "0.0.1",
+    "path": "^0.4.9",
+    "should": "3.1.x",
+    "walk": "^2.3.3"
+  },
+  "dependencies": {
+    "doublemetaphone": "^0.1.2",
+    "moment": "^2.8.4"
+  }
+}
