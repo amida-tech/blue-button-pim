@@ -1,6 +1,6 @@
 {
   "name": "blue-button-pim",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Patient Identification and Matching",
   "main": "index.js",
   "scripts": {
@@ -46,6 +46,7 @@
     "walk": "^2.3.3"
   },
   "dependencies": {
+    "doublemetaphone": "^0.1.2",
     "moment": "^2.8.4"
   }
 }

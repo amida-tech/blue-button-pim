@@ -1,12 +1,6 @@
-var quantifier = require('./lib/quantifier/quantifier.js');
-var decider = require('./lib/decider/decider.js');
-var filter = require('./lib/filter/filter.js');
+var candidates = require("./lib/candidates.js");
+var blocker = require("./lib/blocker.js"); 
 
-var pim = require('./lib/pim.js');
-
-
-exports.quantifier = quantifier;
-exports.decider = decider;
-exports.filter = filter;
-exports.pim = pim;
+module.exports.compare_candidates = candidates.compare;
+module.exports.calculate_blockers = blocker.calculates;
 

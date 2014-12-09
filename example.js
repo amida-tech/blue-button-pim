@@ -3,16 +3,12 @@ var pim = require('./index.js');
 
 //var configs = require('configs')
 
-var quantifier = pim.quantifier;
-var decider = pim.decider;
-var fs = require('fs');
-var filter = pim.filter;
+var inputObj = require('./test/artifacts/cms_generated.json').data.demographics;
+var candidates = [{data:require('./test/artifacts/cms_generated.json').data.demographics, pat_key:"pat1"}, {data:require('./test/artifacts/cms_generated_2.json').data.demographics, pat_key:"pat2"}];
 
-var inputObj = require('./lib/cms_generated.json').data;
-var candidates = [require('./lib/cms_generated.json').data, require('./lib/cms_generated_2.json').data];
-
+console.log("patient",inputObj);
 console.log("candidates",candidates);
 
-var match = pim.pim.findSimilarPatients(inputObj, candidates);
+var match = pim.compare_candidates(inputObj, candidates);
 
 console.log(match);
