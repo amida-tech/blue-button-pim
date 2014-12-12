@@ -1,6 +1,6 @@
 {
     "name": "blue-button-pim",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Patient Identification and Matching",
     "main": "index.js",
     "scripts": {
