@@ -12,3 +12,7 @@ console.log("candidates",candidates);
 var match = pim.compare_candidates(inputObj, candidates);
 
 console.log(match);
+
+var blocks = pim.calculate_blockers(inputObj);
+
+console.log(blocks);
