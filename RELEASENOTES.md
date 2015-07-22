@@ -1,5 +1,11 @@
 # blue-button-pim Release Notes
 
+# v2.0.0 - July 22, 2015
+
+- Update demographic data model
+- Allow shim use for translating demographics from a different source schema
+- Additional unit tests
+
 # v1.0.0 - December 12, 2014
 
 This is the initial release of this library.
