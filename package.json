@@ -20,6 +20,11 @@
         "javascript"
     ],
     "author": "Dmitry Kachaev <dmitry.kachaev@gmail.com> (http://github.com/kachok)",
+    "contributors": [{
+        "name": "Jacob Sachs",
+        "email": "jacob@amida-tech.com",
+        "url": "http://github.com/jsachs"
+    }],
     "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/amida-tech/blue-button-pim/issues"
@@ -29,12 +34,6 @@
         "doublemetaphone": "^0.1.2",
         "moment": "^2.8.4"
     },
-
-
-    "licenses": [{
-        "type": "Apache 2.0",
-        "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-    }],
     "devDependencies": {
         "grunt": "0.4.x",
         "grunt-contrib-jshint": "0.8.x",
