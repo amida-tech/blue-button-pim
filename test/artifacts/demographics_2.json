@@ -1,0 +1,26 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "first": "JANE",
+                "last": "POLY"
+            },
+            "dob": "1910-01-01",
+            "email": "JOHNDOE@example.com",
+            "phone": [
+                {
+                    "number": "123-456-7890",
+                    "type": "primary home"
+                }
+            ],
+            "address": {
+                "use": "primary home",
+                "street": "123 ANY ROAD",
+                "city": "ANYTOWN",
+                "state": "VA",
+                "zip": "00001",
+                "country": "US"
+            }
+        }
+    }
+}
