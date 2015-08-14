@@ -28,4 +28,11 @@ describe('Candidate determination:', function () {
         results = compare(data, candidates);
         expect(results[0].match).to.eq("manual");
     });
+
+    it('use custom thresholds', function () {
+        candidates[0].dob = "2015-01-01";
+        results = compare(data, candidates, null, 20, 18);
+        expect(results).to.have.length(0);
+    });
+
 });

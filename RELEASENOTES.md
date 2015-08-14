@@ -1,5 +1,9 @@
 # blue-button-pim Release Notes
 
+# v2.1.0 - August 14, 2015
+
+- Allow custom threshold values for automatic and manual matches
+
 # v2.0.0 - July 22, 2015
 
 - Update demographic data model
