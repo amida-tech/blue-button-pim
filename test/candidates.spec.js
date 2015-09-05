@@ -10,6 +10,10 @@ describe('Candidate determination:', function () {
     var candidates;
     var results;
 
+    function isAMatch(item) {
+        return item.match !== "no match";
+    }
+
     before(function () {
         data = JSON.parse(fs.readFileSync('./test/artifacts/demographics.json').toString()).data.demographics;
         candidates = [
@@ -20,7 +24,7 @@ describe('Candidate determination:', function () {
 
     it('only one match', function () {
         results = compare(data, candidates);
-        expect(results).to.have.length(1);
+        expect(results.filter(isAMatch)).to.have.length(1);
     });
 
     it('manual match', function () {
@@ -32,7 +36,7 @@ describe('Candidate determination:', function () {
     it('use custom thresholds', function () {
         candidates[0].dob = "2015-01-01";
         results = compare(data, candidates, null, 20, 18);
-        expect(results).to.have.length(0);
+        expect(results.filter(isAMatch)).to.have.length(0);
     });
 
 });
