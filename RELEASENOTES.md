@@ -1,5 +1,11 @@
 # blue-button-pim Release Notes
 
+# v2.2.0 - September 8, 2015
+
+- `compareCandidates` will no longer return an empty object if candidates are found. In cases where
+there are candidates, but they are below the matching threshold, candidate objects will still be
+returned with a score and a match status of `no match`.
+
 # v2.1.0 - August 14, 2015
 
 - Allow custom threshold values for automatic and manual matches
