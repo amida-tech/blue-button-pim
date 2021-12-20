@@ -12,18 +12,21 @@ Match evaluation phase - Evaluate score result
 PIM relies on  Data Matching Algorithm use by the Oklahoma Department of Mental Health and Substance Abuse Services (ODHMSAS) which in turn was influenced by the article by Matthew A. Jaro published in the Statistics in Medicine Journal, Vol. 14, 491-198 (1995) titled ["Probabilistic Linkage of Large Public Health Data Files."] (http://www3.interscience.wiley.com/journal/114131327/abstract)
 
 
-##Quick up and running quide
+## Quick up and running quide
 
-###Prerequisites
+### Prerequisites
 
 - Node.js (v0.10+) and NPM
 - Grunt.js
 
 ```
-# you need Node.js and Grunt.js installed
+# Install dependencies
+npm i
 
-#install dependencies and build
-npm install
+# Install grunt
+npm i -g grunt
+
+# Test
 grunt
 
 ```
@@ -62,7 +65,7 @@ Within the callback we can compare candidates.
 ### compareCandidates(data, candidates, shim)
 This function will take demographic data and a list of candidates and return a list of matches and flagged candidates.
 Each object in the result array has a `pat_key` and a flag `match`. An ideal implementation of this module would result in
-only one `automatic` result at a time. In the case that there is a `manual` result, a user should be presented with 
+only one `automatic` result at a time. In the case that there is a `manual` result, a user should be presented with
 _all_ results flagged as `manual`. An optional `shim` can be passed for translating demographic data within a database
 to match the schema detailed in [`blocker.js`](lib/blocker.js).
 
@@ -72,7 +75,7 @@ Contributors are welcome. See issues https://github.com/amida-tech/blue-button-p
 
 ## Release Notes
 
-See release notes [here] (./RELEASENOTES.md)
+See release notes [here](./RELEASENOTES.md)
 
 ## License
 

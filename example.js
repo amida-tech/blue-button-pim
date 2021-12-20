@@ -1,18 +1,24 @@
 var pim = require('./index.js');
 
+var inputObj = require('./test/artifacts/demographics.json').data.demographics;
+var candidates = [
+  {
+    ...require('./test/artifacts/demographics.json').data.demographics,
+    pat_key: "pat1"
+  },
+  {
+    ...require('./test/artifacts/demographics_2.json').data.demographics,
+    pat_key: "pat2"
+  }
+];
 
-//var configs = require('configs')
+console.log("patient", inputObj);
+console.log("candidates", candidates);
 
-var inputObj = require('./test/artifacts/cms_generated.json').data.demographics;
-var candidates = [{data:require('./test/artifacts/cms_generated.json').data.demographics, pat_key:"pat1"}, {data:require('./test/artifacts/cms_generated_2.json').data.demographics, pat_key:"pat2"}];
+var match = pim.compareCandidates(inputObj, candidates);
 
-console.log("patient",inputObj);
-console.log("candidates",candidates);
+console.log("match", match);
 
-var match = pim.compare_candidates(inputObj, candidates);
+var blocks = pim.calculateBlockers(inputObj);
 
-console.log(match);
-
-var blocks = pim.calculate_blockers(inputObj);
-
-console.log(blocks);
+console.log("blocks", blocks);

@@ -1,5 +1,10 @@
 # blue-button-pim Release Notes
 
+# v2.2.1 - December 20, 2021
+
+- Security fixes to dev dependencies.
+- Removed non-existent test artifacts in `example.js`
+
 # v2.2.0 - September 8, 2015
 
 - `compareCandidates` will no longer return an empty object if candidates are found. In cases where
