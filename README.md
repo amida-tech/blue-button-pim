@@ -12,7 +12,7 @@ Match evaluation phase - Evaluate score result
 PIM relies on  Data Matching Algorithm use by the Oklahoma Department of Mental Health and Substance Abuse Services (ODHMSAS) which in turn was influenced by the article by Matthew A. Jaro published in the Statistics in Medicine Journal, Vol. 14, 491-198 (1995) titled ["Probabilistic Linkage of Large Public Health Data Files."] (http://www3.interscience.wiley.com/journal/114131327/abstract)
 
 
-## Quick up and running quide
+## Quick up and running guide
 
 ### Prerequisites
 
