@@ -1,4 +1,4 @@
-blue-button-pim
+Blue Button PIM
 ===============
 [![NPM][npm-image]][npm-url]
 
@@ -16,7 +16,7 @@ PIM relies on  Data Matching Algorithm use by the Oklahoma Department of Mental 
 
 ### Prerequisites
 
-- Node.js (v0.10+) and NPM
+- Node.js (v14.19+) and NPM
 - Grunt.js
 
 ```
@@ -41,24 +41,24 @@ code to return a set of candidates for comparison:
 var pim = calculateBlockers(data);
 
 var query = model.find({
-        $or: [{
-            "pim.lnmpdob": pim.lnmpdob
-        }, {
-            "pim.lnmpfnpc": pim.lnmpfnpc
-        }, {
-            "pim.lnfn": pim.lnfn
-        }, {
-            "pim.smdlastname13": pim.smdlastname13
-        }]
-    });
+  $or: [{
+    "pim.lnmpdob": pim.lnmpdob
+  }, {
+    "pim.lnmpfnpc": pim.lnmpfnpc
+  }, {
+    "pim.lnfn": pim.lnfn
+  }, {
+    "pim.smdlastname13": pim.smdlastname13
+  }]
+});
 
 query.exec(function (err, results) {
-        if (err) {
-            callback(err);
-        } else {
-            callback(null, results);
-        }
-    });
+  if (err) {
+    callback(err);
+  } else {
+    callback(null, results);
+  }
+});
 ```
 Within the callback we can compare candidates.
 
@@ -82,5 +82,5 @@ See release notes [here](./RELEASENOTES.md)
 Licensed under [Apache 2.0](./LICENSE)
 
 
-[npm-image]: https://nodei.co/npm/blue-button-pim.png?compact=true
-[npm-url]: https://nodei.co/npm/blue-button-pim
+[npm-image]: https://nodei.co/npm/@amida-tech/blue-button-pim.png?compact=true
+[npm-url]: https://nodei.co/npm/@amida-tech/blue-button-pim

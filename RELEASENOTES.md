@@ -1,27 +1,32 @@
 # blue-button-pim Release Notes
 
-# v2.2.1 - December 20, 2021
+## v2.2.2 - April 19, 2022
+
+- Patch Update: Upgraded dev dependencies
+- Converted tests and coverages to jest
+
+## v2.2.1 - December 20, 2021
 
 - Security fixes to dev dependencies.
 - Removed non-existent test artifacts in `example.js`
 
-# v2.2.0 - September 8, 2015
+## v2.2.0 - September 8, 2015
 
 - `compareCandidates` will no longer return an empty object if candidates are found. In cases where
 there are candidates, but they are below the matching threshold, candidate objects will still be
 returned with a score and a match status of `no match`.
 
-# v2.1.0 - August 14, 2015
+## v2.1.0 - August 14, 2015
 
 - Allow custom threshold values for automatic and manual matches
 
-# v2.0.0 - July 22, 2015
+## v2.0.0 - July 22, 2015
 
 - Update demographic data model
 - Allow shim use for translating demographics from a different source schema
 - Additional unit tests
 
-# v1.0.0 - December 12, 2014
+## v1.0.0 - December 12, 2014
 
 This is the initial release of this library.
 

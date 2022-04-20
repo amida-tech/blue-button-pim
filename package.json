@@ -1,60 +1,55 @@
 {
-    "name": "blue-button-pim",
-    "version": "2.2.1",
-    "description": "Patient Identification and Matching based on Blue Button data",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "@amida-tech/blue-button-pim",
+  "version": "2.2.2",
+  "description": "Patient Identification and Matching based on Blue Button data",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amida-tech/blue-button-pim"
+  },
+  "keywords": [
+    "pim",
+    "identity",
+    "matching",
+    "blue button",
+    "json",
+    "node",
+    "javascript"
+  ],
+  "author": "Dmitry Kachaev <dmitry.kachaev@gmail.com> (http://github.com/kachok)",
+  "contributors": [
+    {
+      "name": "Jacob Sachs",
+      "email": "jacob@amida-tech.com",
+      "url": "http://github.com/jsachs"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/amida-tech/blue-button-pim"
-    },
-    "keywords": [
-        "pim",
-        "identity",
-        "matching",
-        "blue button",
-        "json",
-        "node",
-        "javascript"
-    ],
-    "author": "Dmitry Kachaev <dmitry.kachaev@gmail.com> (http://github.com/kachok)",
-    "contributors": [
-        {
-            "name": "Jacob Sachs",
-            "email": "jacob@amida-tech.com",
-            "url": "http://github.com/jsachs"
-        },
-        {
-            "name": "Marc Sylvestre",
-            "email": "marc.sylvestre@manhydra.com"
-        }
-    ],
-    "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/amida-tech/blue-button-pim/issues"
-    },
-    "homepage": "https://github.com/amida-tech/blue-button-pim",
-    "dependencies": {
-        "doublemetaphone": "^0.1.2",
-        "moment": "^2.29.1"
-    },
-    "devDependencies": {
-        "chai": "^4.3.4",
-        "chai-datetime": "^1.8.0",
-        "coveralls": "~3.1.1",
-        "grunt": "^1.4.1",
-        "grunt-contrib-jshint": "^3.1.1",
-        "grunt-contrib-watch": "^1.1.0",
-        "grunt-coveralls": "^2.0.0",
-        "grunt-istanbul-coverage": "^0.1.4",
-        "grunt-jsbeautifier": "^0.2.13",
-        "grunt-mocha-test": "^0.13.3",
-        "mocha": "^9.1.3",
-        "mocha-lcov-reporter": "^1.3.0"
-    },
-    "engines": {
-        "node": ">= 0.10.0"
+    {
+      "name": "Marc Sylvestre",
+      "email": "marc.sylvestre@manhydra.com"
     }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/amida-tech/blue-button-pim/issues"
+  },
+  "homepage": "https://github.com/amida-tech/blue-button-pim",
+  "dependencies": {
+    "doublemetaphone": "^0.1.2",
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.5.2",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-run": "^0.8.1",
+    "jest": "^27.5.1"
+  },
+  "engines": {
+    "node": ">= 14.19.1"
+  }
 }
