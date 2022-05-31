@@ -1,6 +1,6 @@
 Blue Button PIM
 ===============
-[![NPM][npm-image]][npm-url]
+[![NPM](https://nodei.co/npm/@amida-tech/blue-button-pim.png)](https://nodei.co/npm/@amida-tech/blue-button-pim/)
 
 Patient Identification and Matching based on Blue Button data
 

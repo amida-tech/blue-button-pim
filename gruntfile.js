@@ -5,7 +5,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jsbeautifier');
 
-  grunt.registerTask('default', ['jshint', 'jsbeautifier', 'run']);
+  grunt.registerTask('default', ['jshint', 'jsbeautifier', 'test']);
+  grunt.registerTask('test', ['run:test']);
 
   // Print a timestamp (useful for when watching)
   grunt.registerTask('timestamp', function () {
@@ -53,7 +54,7 @@ module.exports = function (grunt) {
       }
     },
     run: {
-      jest: {
+      test: {
         exec: 'npx jest'
       }
     }

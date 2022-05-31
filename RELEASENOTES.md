@@ -1,5 +1,9 @@
 # blue-button-pim Release Notes
 
+## v2.2.3 - May 31, 2022
+
+- Patch Update: GHSA-rm36-94g8-835r - Race Condition in Grunt
+
 ## v2.2.2 - April 19, 2022
 
 - Patch Update: Upgraded dev dependencies
