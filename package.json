@@ -1,6 +1,6 @@
 {
   "name": "@amida-tech/blue-button-pim",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Patient Identification and Matching based on Blue Button data",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,7 @@
   "homepage": "https://github.com/amida-tech/blue-button-pim",
   "dependencies": {
     "doublemetaphone": "^0.1.2",
-    "moment": "^2.29.3"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "grunt": "^1.5.3",
