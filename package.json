@@ -1,6 +1,6 @@
 {
   "name": "@amida-tech/blue-button-pim",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Patient Identification and Matching based on Blue Button data",
   "main": "index.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-jsbeautifier": "^0.2.13",
     "grunt-run": "^0.8.1",
-    "jest": "^27.5.1"
+    "jest": "^29.3.1"
   },
   "engines": {
     "node": ">= 14.19.3"
